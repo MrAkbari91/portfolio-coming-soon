@@ -1,0 +1,43 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 300 200" width="300" height="200">
+  <defs>
+    <linearGradient id="gradDev" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#3b82f6" />
+      <stop offset="100%" stop-color="#06b6d4" />
+    </linearGradient>
+  </defs>
+
+  <!-- Computer screen frame with draw-in effect -->
+  <rect x="90" y="30" width="120" height="80" rx="8" ry="8"
+        fill="none"
+        stroke="url(#gradDev)"
+        stroke-width="3"
+        stroke-dasharray="400"
+        stroke-dashoffset="400">
+    <animate attributeName="stroke-dashoffset" from="400" to="0" dur="1s" fill="freeze" />
+  </rect>
+
+  <!-- Base bar (like a stand) -->
+  <rect x="115" y="115" width="70" height="8" rx="4" ry="4" fill="url(#gradDev)">
+    <animate attributeName="opacity" from="0" to="1" dur="1s" begin="1s" fill="freeze" />
+  </rect>
+
+  <!-- DA monogram -->
+  <text x="150" y="80" text-anchor="middle" font-size="28"
+        font-family="'Fira Code', monospace"
+        fill="url(#gradDev)" opacity="0">
+    <tspan>
+      <animate attributeName="opacity" from="0" to="1" dur="1s" begin="0.8s" fill="freeze" />
+      DA
+    </tspan>
+  </text>
+
+  <!-- Name below -->
+  <text x="150" y="170" text-anchor="middle" font-size="20"
+        font-family="'Poppins', sans-serif"
+        fill="#1e1e2f" opacity="0">
+    <tspan>
+      <animate attributeName="opacity" from="0" to="1" dur="1s" begin="1.2s" fill="freeze" />
+      Dhruv Akbari
+    </tspan>
+  </text>
+</svg>
