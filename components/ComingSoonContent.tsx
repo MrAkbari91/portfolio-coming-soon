@@ -4,7 +4,12 @@ import { useEffect, useRef } from "react"
 import { gsap } from "gsap"
 import Logo from "./Logo"
 import SocialLinks from "./SocialLinks"
+import { Audiowide } from 'next/font/google';
 
+const audiowide = Audiowide({
+  weight: '400',
+  subsets: ['latin'],
+});
 export default function ComingSoonContent() {
   const containerRef = useRef<HTMLDivElement>(null)
   const logoRef = useRef<HTMLDivElement>(null)
@@ -17,7 +22,7 @@ export default function ComingSoonContent() {
     const tl = gsap.timeline()
 
     // Set initial states
-    gsap.set([logoRef.current, titleRef.current, subtitleRef.current, descriptionRef.current, socialRef.current], {
+    gsap.set([titleRef.current, subtitleRef.current, descriptionRef.current, socialRef.current], {
       opacity: 0,
       y: 60,
       scale: 0.9,
@@ -83,12 +88,7 @@ export default function ComingSoonContent() {
         {/* Content */}
         <div className="relative z-10">
           {/* Logo */}
-          <div ref={logoRef} className="mb-8 flex justify-center">
-            <div className="relative">
-              <img src="/logo.svg" alt="Logo" className="w-24 h-24 mb-4 md:w-32 md:h-32" />
-              <div className="absolute inset-0 bg-gradient-to-r from-red-500/20 via-cyan-500/20 to-blue-500/20 rounded-full blur-2xl animate-pulse-glow" />
-            </div>
-          </div>
+          <div ref={logoRef}></div>
 
           {/* Main Title */}
           <h1 ref={titleRef} className="text-5xl md:text-7xl font-bold mb-6">

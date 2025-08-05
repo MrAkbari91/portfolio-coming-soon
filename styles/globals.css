@@ -1,6 +1,7 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+@import url('https://fonts.googleapis.com/css2?family=Audiowide&display=swap');
 
 @layer utilities {
   .text-balance {

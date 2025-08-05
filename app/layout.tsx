@@ -10,11 +10,11 @@ const poppins = Poppins({
 })
 
 export const metadata: Metadata = {
-  title: "Dhruv Akbari - Full-Stack Web Developer | Portfolio Coming Soon",
+  title: "Dhruv Akbari - Web Developer | Portfolio Coming Soon",
   description:
     "Dhruv Akbari - Experienced full-stack web developer specializing in React, Next.js, Node.js, and modern web technologies. Portfolio website launching soon with innovative projects and solutions.",
   keywords:
-    "Dhruv Akbari, web developer, full-stack developer, React developer, Next.js, JavaScript, TypeScript, Node.js, MongoDB, portfolio, web development",
+    "Dhruv Akbari, web developer, Wordpress developer, shopify developer, full-stack developer, React developer, Next.js, JavaScript, TypeScript, Node.js, MongoDB, portfolio, web development",
   authors: [{ name: "Dhruv Akbari" }],
   creator: "Dhruv Akbari",
   publisher: "Dhruv Akbari",
@@ -22,9 +22,9 @@ export const metadata: Metadata = {
   openGraph: {
     type: "website",
     locale: "en_US",
-    title: "Dhruv Akbari - Full-Stack Web Developer",
+    title: "Dhruv Akbari Web Developer",
     description:
-      "Experienced full-stack web developer specializing in modern web technologies. Portfolio launching soon.",
+      "Experienced web developer specializing in modern web technologies. Portfolio launching soon.",
     siteName: "Dhruv Akbari Portfolio",
   },
   twitter: {
@@ -46,9 +46,9 @@ export default function RootLayout({
   return (
     <html lang="en">
       <head>
-        <link rel="icon" href="/logo.svg" type="image/svg+xml" />
         <link rel="preconnect" href="https://fonts.googleapis.com" />
         <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin="anonymous" />
+        <meta name="google-site-verification" content="M71tdDiU-O499RIu-uqiDLBLkJAVh67t9e107tz2UVk" />
       </head>
       <body className={poppins.className}>{children}</body>
     </html>
