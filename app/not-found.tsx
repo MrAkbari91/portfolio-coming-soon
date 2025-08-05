@@ -3,7 +3,6 @@
 import { useEffect, useRef } from "react"
 import { gsap } from "gsap"
 import Link from "next/link"
-import Logo from "@/components/Logo"
 import AnimatedBackground from "@/components/AnimatedBackground"
 
 export default function NotFound() {
@@ -63,10 +62,6 @@ export default function NotFound() {
         ref={containerRef}
         className="glass-strong rounded-2xl p-8 md:p-12 max-w-2xl w-full text-center relative z-10"
       >
-        {/* Logo */}
-        <div className="mb-8 flex justify-center">
-          <Logo className="w-16 h-16 md:w-20 md:h-20" />
-        </div>
 
         {/* 404 Number */}
         <h1 ref={numberRef} className="text-8xl md:text-9xl font-bold mb-6 gradient-text relative">

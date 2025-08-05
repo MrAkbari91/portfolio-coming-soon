@@ -91,9 +91,12 @@ export default function ComingSoonContent() {
           <div ref={logoRef}></div>
 
           {/* Main Title */}
-          <h1 ref={titleRef} className="text-5xl md:text-7xl font-bold mb-6">
-            🚧 <span className="gradient-text">Site Under Development</span>
-          </h1>
+          <div ref={titleRef}>
+            <span className="text-6xl"> 🚧 </span>
+            <h1 className="text-4xl md:text-7xl font-bold my-6 gradient-text">
+              Site Under Development
+            </h1>
+          </div>
 
           {/* Subtitle */}
           <div ref={subtitleRef} className="text-2xl md:text-3xl text-slate-300 mb-4 font-light">
