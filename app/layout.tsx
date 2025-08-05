@@ -34,8 +34,7 @@ export const metadata: Metadata = {
       "Experienced full-stack web developer specializing in modern web technologies. Portfolio launching soon.",
   },
   viewport: "width=device-width, initial-scale=1",
-  themeColor: "#0c0c0c",
-    generator: 'v0.dev'
+  themeColor: "#0c0c0c"
 }
 
 export default function RootLayout({
@@ -49,6 +48,13 @@ export default function RootLayout({
         <link rel="preconnect" href="https://fonts.googleapis.com" />
         <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin="anonymous" />
         <meta name="google-site-verification" content="M71tdDiU-O499RIu-uqiDLBLkJAVh67t9e107tz2UVk" />
+        <script type="text/javascript">
+          (function(c,l,a,r,i,t,y){
+              c[a]=c[a]||function(){(c[a].q=c[a].q||[]).push(arguments)};
+              t=l.createElement(r);t.async=1;t.src="https://www.clarity.ms/tag/"+i;
+              y=l.getElementsByTagName(r)[0];y.parentNode.insertBefore(t,y);
+          })(window, document, "clarity", "script", "sq69d2011p");
+      </script>
       </head>
       <body className={poppins.className}>{children}</body>
     </html>
