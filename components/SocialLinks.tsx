@@ -16,7 +16,7 @@ const socialProfiles = [
     iconColor: "text-white",
   },
   {
-    url: "http://codepen.io/mrakbari91/",
+    url: "http://codepen.io/dhruvakbari/",
     icon: ExternalLink,
     label: "CodePen",
     bgColor: "bg-green-600/25 border-green-600",
